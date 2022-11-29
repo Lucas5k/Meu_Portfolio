@@ -5,20 +5,21 @@ import { ContainerProject, WrapperProjects, WrapperCont } from '../Styled/Styled
 import array from '../utils/array';
 
 function ProjectPage() {
-  const [allProjects, setAllProjects] = useState();
+  const [allProjects, setAllProjects] = useState([]);
 
   useEffect(() => {
     const requestProjects = async () => {
-      const url = process.env.REACT_APP_URL || 'localhost:3005/Projects';
+      const url = process.env.REACT_APP_URL;
       const response = await (await fetch(url)).json();
-      
-      if (!response.length) {
-        setAllProjects(array)
-      }
+
       setAllProjects(response);
     }
     requestProjects()
   }, []);
+
+  if (!allProjects.length) {
+    setAllProjects(array)
+  }
 
   return (
     <ContainerProject>
