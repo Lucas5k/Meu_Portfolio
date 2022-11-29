@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Footer from '../Components/Footer';
 import HeaderPage from '../Components/HeaderPage';
 import { ContainerProject, WrapperProjects, WrapperCont } from '../Styled/StyledProjects';
+import array from '../utils/array';
 
 function ProjectPage() {
   const [allProjects, setAllProjects] = useState([]);
@@ -10,6 +11,10 @@ function ProjectPage() {
     const requestProjects = async () => {
       const url = process.env.REACT_APP_URL || 'localhost:3005/Projects';
       const response = await (await fetch(url)).json();
+      
+      if (!response) {
+        setAllProjects(array)
+      }
       setAllProjects(response);
     }
     requestProjects()
