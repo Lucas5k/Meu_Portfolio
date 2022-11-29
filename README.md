@@ -39,7 +39,10 @@ npm start
 - Inicialize o projeto no back
 npm run dev
 
+use a vontade
 ```
+
+
 ## :soon: Implementação futura
 Nos Próximos dias implementar os testes, tanto do crawler quanto do frontend
 
