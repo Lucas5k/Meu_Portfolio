@@ -12,7 +12,7 @@ function ProjectPage() {
       const url = process.env.REACT_APP_URL || 'localhost:3005/Projects';
       const response = await (await fetch(url)).json();
       
-      if (!response) {
+      if (!response.length) {
         setAllProjects(array)
       }
       setAllProjects(response);
