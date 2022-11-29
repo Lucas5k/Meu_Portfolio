@@ -8,7 +8,7 @@ function ProjectPage() {
 
   useEffect(() => {
     const requestProjects = async () => {
-      const url = process.env.REACT_APP_URL || 'localhost:3005';
+      const url = process.env.REACT_APP_URL || 'localhost:3005/Projects';
       const response = await (await fetch(url)).json();
       setAllProjects(response);
     }
