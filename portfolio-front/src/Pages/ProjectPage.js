@@ -5,7 +5,7 @@ import { ContainerProject, WrapperProjects, WrapperCont } from '../Styled/Styled
 import array from '../utils/array';
 
 function ProjectPage() {
-  const [allProjects, setAllProjects] = useState([]);
+  const [allProjects, setAllProjects] = useState();
 
   useEffect(() => {
     const requestProjects = async () => {
