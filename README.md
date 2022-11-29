@@ -47,6 +47,7 @@ use a vontade
 <a href="https://meu-portfolio-beta-opal.vercel.app/">Clique aqui</a><p>para ver a versão final do nosso projeto no seu navegador.</p>
 
 ## :soon: Implementação futura
-Nos Próximos dias implementar os testes, tanto do crawler quanto do frontend
+Nos Próximos dias implementar os testes, tanto do crawler quanto do frontend;
+Implementar o mobile first, para celulares;
 
 ## :handshake: Projeto feito individualmente!
