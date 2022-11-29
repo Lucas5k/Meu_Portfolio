@@ -12,8 +12,6 @@ services:
   backend:
     container_name: app_backend
     build: ./backend
-    ports:
-      - 3005:3005
     platform: linux/x86_64
     working_dir: /app-backend
     depends_on:
@@ -22,7 +20,7 @@ services:
     environment:
       # Os dados abaixo se referem ao container `db`
       # Dica: Relembre aqui da comunicação interna entre containers
-      - DB_HOST=localhost
+      - MONGOHOST=containers-us-west-55.railway.app
     healthcheck:
       test: ["CMD", "lsof", "-t", "-i:3001"] # Caso utilize outra porta interna para o back, altere ela aqui também
       timeout: 10s
