@@ -1,0 +1,25 @@
+.buttonActive {
+  background-color: #060b26;
+  width: 90%;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 19px;
+  cursor: pointer;
+  color: white;
+  outline: none;
+  font-size: 18px;
+}
+
+.buttonDesabled {
+  border: 1px solid #999999;
+  background-color: transparent;
+  color: #666666;
+  width: 90%;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 19px;
+  cursor: pointer;
+  color: white;
+  outline: none;
+  font-size: 18px;
+}
