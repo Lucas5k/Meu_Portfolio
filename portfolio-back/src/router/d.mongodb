@@ -1,0 +1,3 @@
+use('projects')
+
+db.news.find({}, { _id: 0 })
