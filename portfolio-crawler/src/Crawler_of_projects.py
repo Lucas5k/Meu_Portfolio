@@ -1,7 +1,7 @@
 import requests
 from time import sleep
 from parsel import Selector
-from database import create_new_projects
+# from database import create_new_projects
 
 
 def entry_in_repository(url):
@@ -72,8 +72,7 @@ def get_all_projects():
 
 def writing_to_mongodb():
 	all_projects = get_all_projects()
-	print(all_projects)
-	create_new_projects(all_projects)
+	# create_new_projects(all_projects)
 
 
-writing_to_mongodb()
+# writing_to_mongodb()

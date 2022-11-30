@@ -5,5 +5,3 @@ COPY . /app
 
 RUN python3 -m pip install --upgrade pip
 RUN pip install -r dev-requirements.txt
-RUN source .venv/bin/activate
-RUN python3 Crawler_of_projects.py
