@@ -1,7 +1,7 @@
 ## Meu_Portfolio.
 
 ## :memo: Descrição
-Desenvolvi meu portfolio com o intuito de testar as minhas habilidades, minha aplicação e monorepo. O frontend foi feito com Reactjs, a estilização foi feita com styled-components e css. O backend, foi feito de forma simples utilizando Node.js e Express, somente com uma rota get para renderizar os dados do banco de dados. E por fim mais menos importante, fiz um crawler utilizando Python para acessar o meu github e pegar todos os projetos e depois popular o banco de dados, Mongodb. Para os testes utilizei o Pytest, para testar o Crawler e o Jest para testar o Python!! 
+Desenvolvi meu portfolio com o intuito de testar as minhas habilidades, minha aplicação e monorepo. O frontend foi feito com Reactjs, a estilização foi feita com styled-components e css. O backend, foi feito de forma simples utilizando Node.js e Express, somente com uma rota get para renderizar os dados do banco de dados. E por fim mais menos importante, fiz um crawler utilizando Python para acessar o meu github e pegar todos os projetos e depois popular o banco de dados, Mongodb. Para os testes utilizei o Pytest, para testar o Crawler e o React testing library para testar o React!! 
 
 
 ## :books: Funcionalidades
