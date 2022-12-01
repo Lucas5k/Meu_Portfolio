@@ -1,7 +1,7 @@
 import requests
 from time import sleep
 from parsel import Selector
-# from database import create_new_projects
+# from src.database import create_new_projects
 
 
 def entry_in_repository(url):
