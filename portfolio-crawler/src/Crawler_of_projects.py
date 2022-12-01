@@ -1,7 +1,7 @@
 import requests
 from time import sleep
 from parsel import Selector
-# from src.database import create_new_projects
+from database import create_new_projects
 
 
 def entry_in_repository(url):
@@ -31,7 +31,7 @@ def get_full_url(link_urls):
 	for link in link_urls:
 		full_url.append(link_github + link)
 
-	full_url.remove("https://github.com/Lucas5k/My__Portfolio")
+	full_url.remove("https://github.com/Lucas5k/Meu_Portfolio")
 	full_url.remove("https://github.com/Lucas5k/Lucas5k")
 	full_url.remove("https://github.com/Lucas5k/heroku-CI-CD")
 	full_url.remove("https://github.com/Lucas5k/deploy-heroku")
@@ -61,8 +61,8 @@ def get_all_projects():
 	list_obj = []
 	html_content = entry_in_repository("https://github.com/Lucas5k?tab=repositories")
 	links = get_links_of_a_all_projects(html_content)
-	full_url = get_full_url(links)
 
+	full_url = get_full_url(links)
 	for url in full_url:
 		html = entry_in_repository(url)
 		list_obj.append(entry_in_links(html, url))
@@ -72,7 +72,5 @@ def get_all_projects():
 
 def writing_to_mongodb():
 	all_projects = get_all_projects()
-	# create_new_projects(all_projects)
+	create_new_projects(all_projects)
 
-
-# writing_to_mongodb()
