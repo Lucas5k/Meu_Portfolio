@@ -62,7 +62,7 @@ function HomePage() {
               return (
                 <WrapperSkills key={ index }>
                   {skill.icon}
-                  <h4>{skill.name}</h4>
+                  <h4 data-testid={`element-${index}`}>{skill.name}</h4>
                 </WrapperSkills>
               )
             })

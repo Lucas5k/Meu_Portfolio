@@ -15,7 +15,7 @@ function HeaderPage() {
       <IconContext.Provider value={{ color: '#fff' }}>
         <div className='navbar'>
           <Link to='#' className='menu-bars'>
-            <FaBars onClick={showSidebar} />
+            <FaBars onClick={showSidebar} data-testid='button-svg' />
           </Link>
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
@@ -28,9 +28,9 @@ function HeaderPage() {
             {SidebarData.map((item, index) => {
               return (
                 <li key={ index } className={ item.cName }>
-                  <Link to={ item.path }>
+                  <Link to={ item.path } data-testid={`link-${index}`}>
                     { item.icon }
-                    <span>{ item.title }</span>
+                    <span data-testid={`title-${index}`}>{ item.title }</span>
                   </Link>
                 </li>
               );

@@ -11,7 +11,7 @@ function Footer() {
             return (
               <li key={ index }>
                 <Link to={ item.path }>
-                  { item.title }
+                  <span>{ item.title }</span>
                 </Link>
               </li>
             );
