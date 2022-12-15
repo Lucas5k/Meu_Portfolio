@@ -15,6 +15,6 @@ export const LinksData = [
   {
     title: "Curriculo",
     icon: <FaFileDownload />,
-    path: "https://drive.google.com/file/d/1jQLb47WDX_7r8Y-WElyT5XJkR7W3K-r_/view?usp=sharing"
+    path: "https://drive.google.com/file/d/1yc7KNsjPMXX6My8ggPfZh2zLMgaBZUL1/view?usp=share_link"
   }
 ];
